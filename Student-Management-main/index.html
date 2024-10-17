@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+                <h1>EduTrack: Simplifying Student Registration</h1>
+                <p>Effortlessly register, update, and manage student details with a breeze!</p>
+              </header>
+      
+        <div class="container">
+          <form id="student-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" placeholder="Enter student name" required>
+      
+            <label for="student-id">Student ID:</label>
+            <input type="number" id="student-id" placeholder="Enter student ID" required>
+      
+            <label for="email-id">Email ID:</label>
+            <input type="email" id="email-id" placeholder="Enter email ID" required>
+      
+            <label for="contact-no">Contact No:</label>
+            <input type="tel" id="contact-no" placeholder="Enter contact number" required>
+      
+            <button type="submit">Register</button>
+          </form>
+      
+          <section id="student-records">
+            <h2>Registered Students</h2>
+            <div class="vertical-scroll">
+              <table id="student-table">
+                <thead>
+                  <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email ID</th>
+                    <th>Contact No.</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Rows will be dynamically added here -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        
+        <script src="index.js"></script>
+      </body>
+      
